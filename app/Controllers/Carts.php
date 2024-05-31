@@ -35,6 +35,7 @@ class Carts extends BaseController
             'title'   => 'required',
             'quantity' => 'required|integer'
         ];
+        // Validate input.
         if (!$this->validateData($itemData, $rules)) {
             return $this->response->setJSON(['Error' => $this->validator->getErrors()], 500);
         }

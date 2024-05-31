@@ -16,15 +16,24 @@ class BooksModel extends Model
     // Search book by title - Used for duplicates.
     public function bookByTitle($title)
     {
-        $bookTitle = $this->select('title')->where('title', $title)->find();
-        return $bookTitle;
+        try {
+            $bookTitle = $this->select('title')->where('title', $title)->find();
+            return $bookTitle;
+        } catch (DataException $e) {
+            return $e->getMessage();
+        }
     }
+
 
     // Search book by title - Used for ID and price retrieval in carts.
     public function bookByTitle2Cart($title)
     {
-        $book = $this->select('id, price, quantity')->where('title', $title)->find();
-        return $book;
+        try {
+            $book = $this->select('id, price, quantity')->where('title', $title)->find();
+            return $book;
+        } catch (DataException $e) {
+            return $e->getMessage();
+        }
     }
 
     // Fetch Book quantity to know the availability.
@@ -35,7 +44,6 @@ class BooksModel extends Model
         } catch (DataException $e) {
             return $e->getMessage();
         }
-
         return $book;
     }
 

@@ -58,5 +58,8 @@ abstract class BaseController extends Controller
 
         // Start session ones so we don't need to do it again;
         $this->session = \Config\Services::session();
+
+        // Set Content Security Policy headers
+        $this->response->setHeader('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'");
     }
 }

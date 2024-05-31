@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use CodeIgniter\Database\Exceptions\DataException;
 use CodeIgniter\Model;
 
 class UsersModel extends Model
@@ -14,14 +15,17 @@ class UsersModel extends Model
     //  Search for user email.
     public function userByEmail($email)
     {
-        $email = $this->select('email')->where('email', $email)->find();
-        return $email;
+        try {
+            $email = $this->select('email')->where('email', $email)->find();
+            return $email;
+        } catch (DataException $e) {
+            return $e->getMessage();
+        }
     }
 
     // Search for user details by email.
     public function userDetailsByEmail($email)
     {
-
         $email = $this->select('*')->where('email', $email)->find();
         return $email;
     }
