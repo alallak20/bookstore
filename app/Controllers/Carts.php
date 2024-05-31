@@ -49,13 +49,14 @@ class Carts extends BaseController
             return $this->response->setJSON(['Error' => $e->getMessage()], 500);
         }
 
+        // Check if the quantity is not enough.
+        if($itemData['quantity'] > $book_details[0]['quantity']) {
+            return $this->response->setJSON(['Field', 'Sorry, Only ' . $book_details[0]['quantity'] . ' left in the store'], 500);
+        }
+        
         // Prepare data variables.
         $book_id = $book_details[0]['id'];
         $book_price = $book_details[0]['price'];
-
-        /*
-            We can add a check to know if there is enough quantity.
-        */
 
         // Get existing cart from session
         $cart = $this->session->get('cart') ?? [];
@@ -205,10 +206,6 @@ class Carts extends BaseController
             // Fetch the current quantity in DB.
             try {
                 $quantity = $this->booksModel->getBookQuantity($item_id);
-
-                /*
-                  - In (Add item) we should make sure that there is enough quantity!!!.
-                */
 
                 // Calculate the new quantity.
                 $new_quantity =  $quantity['quantity'] - $details['quantity'];

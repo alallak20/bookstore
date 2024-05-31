@@ -8,3 +8,73 @@ in SYSTEMPATH\Filters\Filters.php on line 495.
  5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:06:08 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 53.
+ 1 APPPATH\Controllers\Carts.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:08:14 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 58.
+ 1 APPPATH\Controllers\Carts.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:09:41 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 57.
+ 1 APPPATH\Controllers\Carts.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:09:52 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 58.
+ 1 APPPATH\Controllers\Carts.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:11:24 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 55.
+ 1 APPPATH\Controllers\Carts.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:12:09 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 55.
+ 1 APPPATH\Controllers\Carts.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-31 20:12:36 --> ErrorException: Undefined array key "quantity"
+[Method: POST, Route: api/add_item]
+in APPPATH\Controllers\Carts.php on line 64.
+ 1 APPPATH\Controllers\Carts.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "quantity"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Carts.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Carts->addItem()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carts))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

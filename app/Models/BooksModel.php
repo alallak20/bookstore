@@ -23,7 +23,7 @@ class BooksModel extends Model
     // Search book by title - Used for ID and price retrieval in carts.
     public function bookByTitle2Cart($title)
     {
-        $book = $this->select('id, price')->where('title', $title)->find();
+        $book = $this->select('id, price, quantity')->where('title', $title)->find();
         return $book;
     }
 
