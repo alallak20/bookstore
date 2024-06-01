@@ -62,3 +62,13 @@ INFO - 2024-06-01 12:49:45 --> Incoming request
 INFO - 2024-06-01 12:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-01 12:49:45 --> A new user named murtada hayder just registered
 INFO - 2024-06-01 12:49:45 --> Outgoing response
+INFO - 2024-06-01 12:53:51 --> Incoming request
+INFO - 2024-06-01 12:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:53:51 --> Outgoing response
+INFO - 2024-06-01 12:54:04 --> Incoming request
+INFO - 2024-06-01 12:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:54:04 --> A new user named murtada hayder just registered
+INFO - 2024-06-01 12:54:04 --> Outgoing response
+INFO - 2024-06-01 12:54:11 --> Incoming request
+INFO - 2024-06-01 12:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:54:11 --> Outgoing response

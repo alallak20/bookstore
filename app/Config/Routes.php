@@ -11,10 +11,9 @@ use App\Controllers\Home;
  */
 
  // Logging Filter.
-$routes->group('', ['filter' => 'logging'], function ($routes) {
+$routes->group('api', ['filter' => 'logging'], function ($routes) {
     
-    // Group accessible for all users.
-    $routes->group('api', function ($routes) {
+
 
         // For testing purposes
         $routes->get('home', [Home::class, 'index']);
@@ -57,5 +56,4 @@ $routes->group('', ['filter' => 'logging'], function ($routes) {
             // User Routers.
             $routes->post('logout', [Users::class, 'logout']);
         });
-    });
 });
