@@ -46,6 +46,8 @@ class Users extends BaseController
         // Store user.
         try {
             if ($this->model->insert($userData)) {
+                // Log that a user registered.
+                log_message('info', 'A new user named ' . $userData['name'] . ' just registered');
                 return $this->response->setJSON(['Success' => 'User signed up successfully'], 201);
             }
         } catch (DataException $e) {
@@ -63,35 +65,35 @@ class Users extends BaseController
             'password' => 'required|regex_match[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*]{6,}$]',
         ];
 
+
+        // Validate data.
+        if (!$this->validateData($userData, $rules)) {
+            return $this->response->setJSON($this->validator->getErrors());
+        }
+
+        // Checks if email is exist.
         try {
-            // Validate data.
-            if (!$this->validateData($userData, $rules)) {
-                return $this->response->setJSON($this->validator->getErrors());
-            }
+            if (!empty($user = $this->model->userDetailsByEmail($userData['email']))) {
+                $user = $user[0];
+                $stored_pass = $user['password'];
+                $provided_pass = $userData['password'];
 
-            // Checks if email is exist.
-            try {
-                if (!empty($user = $this->model->userDetailsByEmail($userData['email']))) {
-                    $user = $user[0];
-                    $stored_pass = $user['password'];
-                    $provided_pass = $userData['password'];
+                // Check password.
+                if (password_verify($provided_pass, $stored_pass)) {
+                    // Create session for user.
+                    $this->createUserSession($user);
+                    $this->session->set('isLoggedIn', true);
 
-                    // Check password.
-                    if (password_verify($provided_pass, $stored_pass)) {
-                        // Create session for user.
-                        $this->createUserSession($user);
-                        $this->session->set('isLoggedIn', true);
+                    // Log that a user just logged in.
+                    log_message('info', 'A user with email ' . $userData['email'] . ' just logged in');
 
-                        return $this->response->setJSON(['Success' => 'User {' . $user['name'] . '} logged in successfully'], 200);
-                    }
-                } else {
-                    return $this->response->setJSON(['Field' => 'User not found'], 404);
+                    return $this->response->setJSON(['Success' => 'User {' . $user['name'] . '} logged in successfully'], 200);
                 }
-            } catch (DataException $e) {
-                return $this->response->setJSON(['Error' => $e->getMessage()], 500);
+            } else {
+                return $this->response->setJSON(['Field' => 'User not found'], 404);
             }
         } catch (DataException $e) {
-            return $this->response->setJSON(['Filed' => $e->getMessage()], 500);
+            return $this->response->setJSON(['Error' => $e->getMessage()], 500);
         }
     }
 
@@ -102,6 +104,8 @@ class Users extends BaseController
             // Destroy session data
             $this->session->destroy();
 
+            // Log that a user just logged in.
+            log_message('info', 'A user just logged out');
             return $this->response->setJSON(['Success' => 'User logged out successfully'], 200);
         } catch (DataException $e) {
             return $this->response->setJSON(['Filed' => $e->getMessage()], 500);

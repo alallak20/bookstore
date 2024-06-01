@@ -1,0 +1,64 @@
+INFO - 2024-06-01 12:37:34 --> Incoming request
+INFO - 2024-06-01 12:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:37:51 --> Incoming request
+INFO - 2024-06-01 12:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:37:51 --> Outgoing response
+INFO - 2024-06-01 12:37:59 --> Incoming request
+INFO - 2024-06-01 12:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:37:59 --> Outgoing response
+INFO - 2024-06-01 12:38:13 --> Incoming request
+INFO - 2024-06-01 12:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:38:13 --> Outgoing response
+INFO - 2024-06-01 12:38:23 --> Incoming request
+INFO - 2024-06-01 12:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:38:23 --> Outgoing response
+INFO - 2024-06-01 12:38:58 --> Incoming request
+INFO - 2024-06-01 12:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:39:52 --> Incoming request
+INFO - 2024-06-01 12:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:39:52 --> Outgoing response
+INFO - 2024-06-01 12:40:07 --> Incoming request
+INFO - 2024-06-01 12:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:40:07 --> Outgoing response
+INFO - 2024-06-01 12:40:17 --> Incoming request
+INFO - 2024-06-01 12:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:40:17 --> Outgoing response
+INFO - 2024-06-01 12:40:21 --> Incoming request
+INFO - 2024-06-01 12:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:40:21 --> Outgoing response
+INFO - 2024-06-01 12:45:03 --> Incoming request
+INFO - 2024-06-01 12:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:45:03 -->  just logged out
+INFO - 2024-06-01 12:45:03 --> Outgoing response
+INFO - 2024-06-01 12:45:22 --> Incoming request
+INFO - 2024-06-01 12:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:45:26 --> Incoming request
+INFO - 2024-06-01 12:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-01 12:45:27 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\Users.php on line 88.
+ 1 APPPATH\Controllers\Users.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\cibookstore\\app\\Controllers\\Users.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-01 12:47:21 --> Incoming request
+INFO - 2024-06-01 12:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:47:25 --> Incoming request
+INFO - 2024-06-01 12:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:47:25 -->  just logged out
+INFO - 2024-06-01 12:47:25 --> Outgoing response
+INFO - 2024-06-01 12:47:28 --> Incoming request
+INFO - 2024-06-01 12:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:47:29 --> A user with email murt.work@gmail.com just logged in
+INFO - 2024-06-01 12:47:29 --> Outgoing response
+INFO - 2024-06-01 12:47:59 --> Incoming request
+INFO - 2024-06-01 12:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:47:59 -->  just logged out
+INFO - 2024-06-01 12:47:59 --> Outgoing response
+INFO - 2024-06-01 12:49:45 --> Incoming request
+INFO - 2024-06-01 12:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-01 12:49:45 --> A new user named murtada hayder just registered
+INFO - 2024-06-01 12:49:45 --> Outgoing response
